@@ -129,3 +129,12 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 . "$HOME/.cargo/env"
 
+alias pm="sudo pacman"
+alias pmu="sudo pacman -Syu"
+alias yu="sudo yay -Syu"
+alias clip="xclip -selection clipboard <"
+alias inst="sudo make clean install"
+alias vi="lvim"
+alias vim="lvim"
+echo 
+pfetch
