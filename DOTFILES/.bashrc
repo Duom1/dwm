@@ -134,7 +134,7 @@ alias pmu="sudo pacman -Syu"
 alias yu="sudo yay -Syu"
 alias clip="xclip -selection clipboard <"
 alias inst="sudo make clean install"
+alias svi="sudo lvim"
 alias vi="lvim"
-alias vim="lvim"
 echo 
 pfetch

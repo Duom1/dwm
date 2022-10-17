@@ -62,7 +62,33 @@ sudo pacman -S figlet
 cat .bash_history | grep pacman
 cat .bash_history | grep pacman >> dwm/install.txt 
 cat .bash_history | grep pacman
-
+cat .bash_history | grep pacman >> dwm/install.txt 
+pm
+sudo pm -Syu
+pm -h
+pm -h
+pmu
+pm freshfetch
+pm -S freshfetch
+cat .bash_history | grep pm 
+cat .bash_history | grep pm 
+cat .bash_history | grep pm  >> dwm/install.txt 
+pm -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+pm -S libgueststfs
+pm -S libguestfs
+pm -S alsa
+pm -S pulseaudio-alsa
+pm -S npcamixer
+pm -S alsa-tools alsa-firmware
+pm -S libvirt
+pm -S ebtables
+pm -S boxes
+pm -S gnome-boxes
+pm -S udisks2
+pm -S emptty
+pm -S gnome
+pm -Rdd gnu-free-fonts
+pm -Rs thunar
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git/
 yay
@@ -85,13 +111,9 @@ yay -S nerdfetch
 yay macchina
 yay -Syu
 yay -S pfetch
-
-pm
-sudo pm -Syu
-pm -h
-pm -h
-pmu
-pm freshfetch
-pm -S freshfetch
-cat .bash_history | grep pm 
-cat .bash_history | grep pm 
+cat .bash_history | grep yay >> dwm/install.txt 
+yay -S npcamixer
+yay -S ncpamixer
+yay -S emppty
+yay -S emptty
+yay -S xinit-xsession
