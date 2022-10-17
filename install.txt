@@ -1,0 +1,78 @@
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git/
+yay
+yay -Rs nofetch
+yay nerd-fonts
+yay nerd-fonts-comp
+yay librewolf-bin
+yay -S dwm-distrotube-git
+yay -S cdm
+yay -S cdm
+yay -S better-discord-installer-bin
+yay -S betterdiscord-installer-bin
+yay -S thunar-shares-plugin
+cat .bash_history | grep yay 
+cat .bash_history | grep yay  > dwm/install.txt 
+
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -S git nofetch
+sudo pacman -S git
+sudo pacman -S ranger
+sudo pacman -S alacritty
+sudo pacman -S nvim
+sudo pacman -S neovim
+sudo pacman -S xorg
+sudo pacman -Rs sddm
+sudo pacman -S neofetch
+sudo pacman -Rs nofetch neofetch
+sudo pacman -Rs neofetch
+sudo pacman -Rs neofetch-git
+sudo pacman -Rs nofetch-git
+sudo pacman -list
+sudo pacman -help
+pacman --help
+pacman -Q
+pacman -Qe
+pacman -Qet
+sudo pacman -S neofetch
+sudo pacman -S neovim
+sudo pacman -S nitrogen
+sudo pacman -S picom
+sudo pacman -S firefox
+sudo pacman -S firefox
+sudo pacman -S obs-studio arduino
+sudo pacman -S thunar
+sudo pacman -Rs thunar
+sudo pacman -S nautilus
+sudo pacman -S nautilus-share
+sudo pacman -S bashtop htop
+sudo pacman -Rs nautilus nautilus-share
+sudo pacman -S alacritty-themes
+sudo pacman -S ssh
+sudo pacman -S openssh
+sudp pacman -Rs gnu-free-fonts
+sudo pacman -Rs gnu-free-fonts
+sudo pacman -Rsf gnu-free-fonts
+sudo pacman -Rsu gnu-free-fonts
+sudo pacman -R gnu-free-fonts
+sudo pacman -R gnu-free-fonts ttf-fonts
+sudo pacman -R gnu-free-fonts ttf-font
+sudo pacman -Rdd gnu-free-fonts
+sudo pacman -S pam
+sudo pacman -Rs cdm
+sudo pacman -Rs emptty
+sudo pacman -S mpv
+sudo pacman -S 
+sudo pacman -S figit
+sudo pacman -S xsel xclip
+sudo pacman -S discord
+sudo pacman -S dolphin
+sudo pacman -Rs dolphin
+sudo pacman -S thunar
+sudo pacman -S thunar-share
+sudo pacman -S thunar-shares
+sudo pacman -S thunar-shares-samba
+sudo pacman -S samba
+sudo pacman -S figlet
+cat .bash_history | grep pacman
