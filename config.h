@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 0;
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -14,7 +14,7 @@ static const char *fonts[] = {
   "FontAwesome5Brands:pixelsize=15:antialias=true:autohint=true"
 };
 
-#include "/home/void/.cache/wal/colors-wal-dwm.h"
+#include "./colors-wal-dwm.h"
 
 /*
 static const char dmenufont[]       = "monospace:size=10";
@@ -40,8 +40,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
   { "Firefox",      NULL,       NULL,       1 << 1,       0,           -1 },
-  { "pavucontrol",  NULL,       NULL,       1 << 8,       0,           -1 },
+
+  { "nautilus",     NULL,       NULL,       0,            1,           -1 },
   { "discord",      NULL,       NULL,       1 << 7,       0,           -1 },
+  { "pavucontrol",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
