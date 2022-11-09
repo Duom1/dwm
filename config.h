@@ -16,22 +16,22 @@ static const char *fonts[] = {
 
 #include "./colors-wal-dwm.h"
 
-/*
-static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#ff5500";
-static const char *colors[][3]      = {
-	 =               fg         bg         border   =
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
-*/
+
+// static const char dmenufont[]       = "monospace:size=10";
+// static const char col_gray1[]       = "#222222";
+// static const char col_gray2[]       = "#444444";
+// static const char col_gray3[]       = "#bbbbbb";
+// static const char col_gray4[]       = "#eeeeee";
+// static const char col_cyan[]        = "#ff5500";
+// static const char *colors[][3]      = {
+// 	 =               fg         bg         border   =
+// 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+// 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+// };
+
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", ""};
+static const char *tags[] = { "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -39,11 +39,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-  { "Firefox",      NULL,       NULL,       1 << 1,       0,           -1 },
+  { "Firefox",         NULL,       NULL,       1 << 1,       0,           -1 },
 
-  { "nautilus",     NULL,       NULL,       0,            1,           -1 },
-  { "discord",      NULL,       NULL,       1 << 7,       0,           -1 },
-  { "pavucontrol",  NULL,       NULL,       1 << 8,       0,           -1 },
+  { "nautilus",        NULL,       NULL,       0,            1,           -1 },
+  { "discord",         NULL,       NULL,       1 << 7,       0,           -1 },
+  { "Volume Control",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -72,11 +72,13 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", "monospace:size=13", };
+static const char *firefox[]  = { "firefox", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_o,      spawn,          {.v = firefox} },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
