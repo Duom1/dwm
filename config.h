@@ -31,7 +31,8 @@ static const char *fonts[] = {
 
 
 /* tagging */
-static const char *tags[] = { "", "", "" };
+static const char *tags[] = { "", "", "" }; // OPT_ICONS
+static const char *tags[] = { "1", "2", "3" }; // OPT_NO_ICONS
 
 static const Rule rules[] = {
 	/* xprop(1):
