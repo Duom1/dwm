@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 #define PrintScreen 0x0000ff61
+#include <X11/XF86keysym.h>
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -64,9 +65,13 @@ static const char *termcmd[]  = { "tabbed", "-c", "-r", "2", "st", "-w", "''", N
 static const char *lock[]  = { "slock", NULL };
 static const char screenshot_command[] = "maim | xclip -selection clipboard -t image/png";
 static const char screenshot_area_command[] = "maim -s | xclip -selection clipboard -t image/png";
+static const char *br_up_command[] = { "brightnessctl", "set", "10%+", NULL };
+static const char *br_down_command[] = { "brightnessctl", "set", "10%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
+  { 0, XF86XK_MonBrightnessUp,               spawn,          {.v = br_up_command} },
+  { 0, XF86XK_MonBrightnessDown,             spawn,          {.v = br_down_command} },
 	{ ShiftMask,                    PrintScreen,      spawn,   SHCMD(screenshot_area_command) },
 	{ 0,                            PrintScreen,      spawn,   SHCMD(screenshot_command) },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
