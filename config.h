@@ -69,11 +69,12 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL};
 /* static const char *termcmd[]  = { "tabbed", "-c", "-r", "2", "st", "-w", "''", NULL }; */
 static const char *termcmd[]  = { "st", NULL };
-static const char lock[]  = "xset dpms force standby ; slock";
+static const char *lock[]  = { "/home/user/dotfiles/lock.sh", NULL };
 static const char screenshot_command[] = "maim | xclip -selection clipboard -t image/png";
 static const char screenshot_area_command[] = "maim -s | xclip -selection clipboard -t image/png";
 static const char *br_up_command[] = { "brightnessctl", "set", "10%+", NULL };
 static const char *br_down_command[] = { "brightnessctl", "set", "10%-", NULL };
+static const char *power_menu[] = { "rofi", "-show", "power-menu", "-modi", "power-menu:rofi-power-menu", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -82,8 +83,9 @@ static const Key keys[] = {
 	{ ShiftMask,                    PrintScreen,      spawn,   SHCMD(screenshot_area_command) },
 	{ 0,                            PrintScreen,      spawn,   SHCMD(screenshot_command) },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(lock) },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lock} },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_BackSpace, spawn,       {.v = power_menu } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
