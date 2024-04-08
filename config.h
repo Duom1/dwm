@@ -12,7 +12,7 @@ static const int sidepad            = 10;       /* horizontal padding of bar */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono Nerf Font Mono:size=14" };
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=14:antialias=true" };
 #include "/home/user/.cache/wal/colors-wal-dwm.h"
 /* static const char dmenufont[]       = "JetBrainsMono Nerf Font Mono:size=10"; */
 /* static const char col_gray1[]       = "#222222"; */
