@@ -80,7 +80,7 @@ static char dmenumon[2] =
 /* static const char *termcmd[]                = { "tabbed", "-c", "-r", "2",
  * "st", "-w", "''", NULL }; */
 static const char *termcmd[] = {"st", NULL};
-static const char *lock[] = {"/home/user/dotfiles/lock.sh", NULL};
+static const char *lock[] = {"/home/user/lock.sh", NULL};
 static const char screenshot_command[] =
     "maim | xclip -selection clipboard -t image/png";
 static const char screenshot_area_command[] =
