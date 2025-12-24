@@ -85,8 +85,8 @@ static char dmenumon[2] =
   "0"; /* component of dmenucmd, manipulated in spawn() */
 /* static const char *termcmd[]                = { "tabbed", "-c", "-r", "2",
  * "st", "-w", "''", NULL }; */
-static const char* termcmd[] = { "urxvt", NULL };
-static const char* termcmd2[] = { "st", NULL };
+static const char* termcmd[] = { "st", NULL };
+static const char* termcmd2[] = { "urxvt", NULL };
 static const char* lock[] = { "/home/user/lock.sh", NULL };
 static const char screenshot_command[] =
   "maim | xclip -selection clipboard -t image/png";
