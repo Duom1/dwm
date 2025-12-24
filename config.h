@@ -85,8 +85,8 @@ static char dmenumon[2] =
   "0"; /* component of dmenucmd, manipulated in spawn() */
 /* static const char *termcmd[]                = { "tabbed", "-c", "-r", "2",
  * "st", "-w", "''", NULL }; */
-static const char* termcmd[] = { "st", NULL };
-static const char* termcmdurxvt[] = { "urxvt", NULL };
+static const char* termcmd[] = { "urxvt", NULL };
+static const char* termcmd2[] = { "st", NULL };
 static const char* lock[] = { "/home/user/lock.sh", NULL };
 static const char screenshot_command[] =
   "maim | xclip -selection clipboard -t image/png";
@@ -109,7 +109,7 @@ static const Key keys[] = {
   /* modifier                     key        function        argument */
   { MODKEY, XK_p, spawn, { .v = dmenucmd } },
   { MODKEY | ShiftMask, XK_l, spawn, { .v = lock } },
-  { MODKEY | ShiftMask, XK_Return, spawn, { .v = termcmdurxvt } },
+  { MODKEY | ShiftMask, XK_Return, spawn, { .v = termcmd2 } },
   { MODKEY, XK_Return, spawn, { .v = termcmd } },
   { MODKEY, XK_b, togglebar, { 0 } },
   { MODKEY, XK_j, focusstack, { .i = +1 } },
